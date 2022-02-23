@@ -14,7 +14,7 @@ namespace SimonSays
 {
     public partial class GameScreen : UserControl
     {
-        //TODO: create guess variable to track what part of the pattern the user is at
+        //TODO: create an int guess variable to track what part of the pattern the user is at
 
 
         public GameScreen()
@@ -24,16 +24,35 @@ namespace SimonSays
 
         private void GameScreen_Load(object sender, EventArgs e)
         {
-            //TODO: clear the pattern list from form1, refresh, pause for a bit, and run ComputerTurn()
+            //TODO: clear the pattern list from form1
+            //TODO: refresh
+            //TODO: pause for a bit
+            //TODO: run ComputerTurn()
         }
 
         private void ComputerTurn()
         {
-            //TODO: get rand num between 0 and 4 (0, 1, 2, 3) and add to pattern list
+            //TODO: get rand num between 0 and 4 (0, 1, 2, 3) and add to pattern list. Each number represents a button. For example, 0 may be green, 1 may be blue, etc.
 
             //TODO: create a for loop that shows each value in the pattern by lighting up approriate button
 
-            //TODO: get guess index value back to 0
+            //TODO: set guess value back to 0
+        }
+
+        //TODO: create one of these event methods for each button
+        private void greenButton_Click(object sender, EventArgs e)
+        {
+            //TODO: is the value in the pattern list at index [guess] equal to a green?
+                // change button color
+                // play sound
+                // refresh
+                // pause
+                // set button colour back to original
+                // add one to the guess variable
+             
+            //TODO:check to see if we are at the end of the pattern, (guess is the same as pattern list count).
+                // call ComputerTurn() method
+                // else call GameOver method
         }
 
         public void GameOver()
@@ -42,18 +61,6 @@ namespace SimonSays
 
             //TODO: close this screen and open the GameOverScreen
 
-        }
-
-        //TODO: create one of these event methods for each button
-        private void greenButton_Click(object sender, EventArgs e)
-        {
-            //TODO: is the value at current guess index equal to a green. If so:
-                // light up button, play sound, and pause
-                // set button colour back to original
-                // add one to the guess index
-                // check to see if we are at the end of the pattern. If so:
-                    // call ComputerTurn() method
-                // else call GameOver method
         }
     }
 }
