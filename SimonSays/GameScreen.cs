@@ -17,6 +17,7 @@ namespace SimonSays
     public partial class GameScreen : UserControl
     {
         //TODO: create an int guess variable to track what part of the pattern the user is at
+        public static Stopwatch myWatch = new StopWatch();
 
         int guess;
 

@@ -18,7 +18,6 @@ namespace SimonSays
         //TODO: create a List to store the pattern. Must be accessable on other screens
 
         public static List<int> pattern= new List<int>(new int[] {0, 1, 2, 3});
-        //public static Stopwatch myWatch = new StopWatch();
 
 
         public Form1()

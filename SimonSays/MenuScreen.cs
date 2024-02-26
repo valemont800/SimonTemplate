@@ -15,12 +15,13 @@ namespace SimonSays
     public partial class MenuScreen : UserControl
     {
 
-        //SoundPlayer menuMusic = new SoundPlayer(SimonSays.Properties.Resources.Nineshop2015);
+        //SoundPlayer menuMusic = new SoundPlayer(Properties.Resources.nineshopsept);
 
         public MenuScreen()
         {
             InitializeComponent();
-            //Nineshop2015.Play();
+
+            //menuMusic.Play();
         }
 
         private void newButton_Click(object sender, EventArgs e)
@@ -33,6 +34,8 @@ namespace SimonSays
 
             f.Controls.Add(gs);
             gs.Focus();
+
+
 
         }
 
